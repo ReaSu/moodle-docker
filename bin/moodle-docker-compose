@@ -25,7 +25,7 @@ basedir="$( cd -P "$( dirname "$SOURCE" )/../" && pwd )"
 export ASSETDIR="${basedir}/assets"
 
 
-dockercompose="docker-compose -f ${basedir}/base.yml"
+dockercompose="docker compose -f ${basedir}/base.yml"
 dockercompose="${dockercompose} -f ${basedir}/service.mail.yml"
 
 # PHP Version.
